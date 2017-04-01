@@ -1,19 +1,19 @@
-#What is the motivation behind it?
+# What is the motivation behind it?
 
 1. Creation of the object is spread across multiple classes.
 2. If the client cannot access the object's creation code, because it is moved far away from client to a different layer, then it is very difficult for the client to create the object with different configurations
 
-#Solution
+# Solution
 
 Factory design pattern will be helpful because the entire creation logic now resides at one place. 
 
-#Choices
+# Choices
 
 * Make the current class implement a Factory interface.
 * If the creation logic becomes too complex, due to supporting too many __creating options__ then it makes sense to abstract the creation logic to a static factory.
 Once that is done the client can then configure the system with a __Concrete Factory (an implementation of Abstract Factory)__ or it can let the system use the __Default Concrete Factory__
 
-#"Factory" Demystified
+# "Factory" Demystified
 We have been lying in the world of development with closely associated terms around "Factory". We all have heard __Static Factory__, __Factory method__ and now __Factory__.
 As a matter of fact all three are different with a subtle difference.
 
