@@ -16,10 +16,10 @@ private void paintCard(Graphics g) {
 		image = explanations.getGameUI().solution;
 	} else if (card.getType().equals("Value")) {
 		image = explanations.getGameUI().value;
-}
+	}
 
 	g.drawImage(image,0,0,explanations.getGameUI());
-   
+  
    if (shouldHighlight())
      paintCardHighlight(g);
    paintCardText(g);
