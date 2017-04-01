@@ -7,6 +7,7 @@ A composed method consists of calls to other methods.
 2. Good composed methods have code at the same level of detail.
 
 E.g.
+
 ```java
 private void paintCard(Graphics g) {
 	Image image = null;
