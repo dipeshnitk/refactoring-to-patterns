@@ -7,6 +7,7 @@ A composed method consists of calls to other methods.
 2. Good composed methods have code at the same level of detail.
 
 E.g.
+<<<<<<< HEAD
 
 ```java
 private void paintCard(Graphics g) {
@@ -20,6 +21,20 @@ private void paintCard(Graphics g) {
 }
    
 g.drawImage(image,0,0,explanations.getGameUI());
+=======
+```
+private void paintCard(Graphics g) {
+	__Image image = null;__
+	__if (card.getType().equals("Problem")) {__
+		__image = explanations.getGameUI().problem;__
+	} __else if (card.getType().equals("Solution")) {__
+		__image = explanations.getGameUI().solution;__
+	} __else if (card.getType().equals("Value")) {__
+		__image = explanations.getGameUI().value;__
+}
+   
+__g.drawImage(image,0,0,explanations.getGameUI());__
+>>>>>>> 6c6bf0bba78a34e4d87406e5d7c4fd4470e1e6a8
 
    if (shouldHighlight())
      paintCardHighlight(g);
