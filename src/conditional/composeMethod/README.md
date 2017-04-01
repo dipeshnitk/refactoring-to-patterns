@@ -25,7 +25,7 @@ private void paintCard(Graphics g) {
    paintCardText(g);
 }
 ```
-The code in bold is not at the same line of detail as the non-bold code.
+The code in the first few lines if-else statements are not at the same level to the last three lines of code.
 
 The correct level of code would be:
 
